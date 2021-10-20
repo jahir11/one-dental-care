@@ -1,0 +1,11 @@
+.logo{
+    width: 60px;
+}
+.anchor{
+    text-decoration: none;
+    color: white;
+}
+.anchor:hover{
+    color: rgb(27, 25, 24);
+    border-bottom: 2px solid white;
+}
