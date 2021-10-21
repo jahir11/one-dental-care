@@ -40,10 +40,9 @@ const Footer = () => {
                     </Col>
                     <Col lg={3} md={6} sm={12} >
                           <h4 className="text-dark">Contact</h4>
-                          <p>Dental Implants</p>
-                          <p>Cosmetic Dentistry</p>
-                          <p>Teeth Whitening</p>
-                          <p>Teeth Cleaning</p>
+                          <p>Phone: +880 1800000000</p>
+                          <p>Mail: onedental.care@gmail.com</p>
+                          <p>Mail: dental.bd@gmail.com</p>
                     </Col>
                         </Row>
 

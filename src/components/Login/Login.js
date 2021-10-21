@@ -8,7 +8,7 @@ import { FaFacebook, FaGithub, FaGoogle } from 'react-icons/fa';
 import useAuth from '../../hooks/useAuth';
 
 const Login = () => {
-    const {handleGoogleSignIn, handleLogin, error} = useAuth()
+    const {handleGoogleSignIn,handleEmail,handlePassword, handleLogin, error} = useAuth()
     return (
         <div>
             <Container>
@@ -18,11 +18,11 @@ const Login = () => {
                     <h2 className="mb-4">Log in to your account</h2>
                     <Form>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
-                        <Form.Control type="email" placeholder="Enter email" />
+                        <Form.Control onBlur={handleEmail} type="email" placeholder="Enter email" />
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="formBasicPassword">
-                        <Form.Control type="password" placeholder="Password" />
+                        <Form.Control onBlur={handlePassword}  type="password" placeholder="Password" />
                     </Form.Group>
                     
                     <Form.Group className="mb-3 text-danger">{error}</Form.Group>
